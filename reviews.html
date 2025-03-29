@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Helpline - Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WiFi Helpline - Reviews</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="diensten.html">Diensten</a>
+        <a href="over.html">Over Ons</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="reviews" class="section">
+            <h2>Klanten Reviews</h2>
+            <p>Lees wat onze klanten zeggen over onze WiFi-diensten!</p>
+
+            <button class="speedtest-btn" onclick="document.getElementById('reviewForm').style.display = 'block';">Laat een review achter</button>
+
+            <div id="reviewForm" class="review-form" style="display:none;">
+                <h3>Geef je Review</h3>
+                <form action="#">
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="rating">Beoordeling (1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+                    <label for="review">Review:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+
+                    <button type="submit">Verzend Review</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 WiFi Helpline - Alle rechten voorbehouden</p>
+    </footer>
+</body>
+</html>

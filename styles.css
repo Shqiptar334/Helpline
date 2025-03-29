@@ -1,0 +1,137 @@
+/* Algemeen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Witte achtergrond voor de pagina */
+    color: #333; /* Donkergrijze tekst voor leesbaarheid */
+}
+
+/* Header */
+header {
+    background-color: #0073e6; /* Blauw voor de header */
+    color: white; /* Witte tekst in de header */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigatiebalk */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #005bb5; /* Donkerblauw voor de navigatiebalk */
+    padding: 10px;
+}
+
+nav a {
+    color: white; /* Witte tekst voor de navigatie */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Mooi effect bij hover */
+}
+
+nav a:hover {
+    background-color: #0073e6; /* Lichter blauw bij hover */
+    border-radius: 5px;
+}
+
+/* Hoofdcontainer */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Secties */
+.section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Knoppen */
+button {
+    background-color: #0073e6; /* Blauw voor de knoppen */
+    color: white; /* Witte tekst */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Mooi effect bij hover */
+}
+
+button:hover {
+    background-color: #005bb5; /* Donkerder blauw bij hover */
+}
+
+/* Footer */
+footer {
+    background-color: #0073e6; /* Blauw voor de footer */
+    color: white; /* Witte tekst in de footer */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Formulier (bijvoorbeeld voor reviews) */
+.review-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.review-form input, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button {
+    background-color: #0073e6; /* Blauw voor de verzendknop */
+    color: white; /* Witte tekst */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #005bb5; /* Donkerder blauw bij hover */
+}
+
+/* Speedtest Container */
+.speedtest-container {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* Kleine aanpassingen voor responsiviteit */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
